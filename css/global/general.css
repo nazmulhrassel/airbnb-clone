@@ -1,5 +1,3 @@
-@import url("../global/boilerplate.css");
-
 h1 {
   color: #080809;
   font-size: 1.5rem;
@@ -11,7 +9,7 @@ p {
   font-size: clamp(0.625rem, 0.525rem + 0.5vw, 1.125rem);
 }
 h2 {
-  color: #080809;
+  color: var(--clr-dark);
   font-weight: 500;
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 1.175rem + 0.375vw, 1.625rem);
