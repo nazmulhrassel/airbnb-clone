@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5em;
+}
+header p {
+  color: var(--clr-dark);
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+}

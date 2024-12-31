@@ -1,0 +1,414 @@
+@import url("/css/global/boilerplate.css");
+@import url("/css/global/fonts.css");
+@import url("/css/global/header.css");
+@import url("/css/global/general.css");
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.hero-card {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
+  top: 29vh;
+}
+
+.hero-card p {
+  width: 35ch;
+}
+
+form .location {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-block: 8px;
+}
+form label {
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.6rem + 0.125vw, 0.75rem);
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  font-weight: 400;
+}
+form input {
+  outline-style: none;
+  border: none;
+  background-color: #fff;
+}
+
+form .check-in {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.098);
+  padding: 8px 10px;
+  width: 50%;
+}
+form .check-out {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(0, 0, 0, 0.098);
+  padding: 8px 10px;
+  width: 50%;
+}
+.check-in-out {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  border-radius: 6px;
+}
+.search-btn {
+  padding: 14px;
+  background: linear-gradient(to right, #c81f3e, #ff385c, #c81f3e);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.search-btn a {
+  color: #fff;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+}
+.search-btn i {
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.6rem + 0.125vw, 0.75rem);
+  padding-inline: 4px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.hero-image img {
+  border-radius: 10px;
+  width: 85%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* top-rated-holiday section start */
+.top-rated-holiday {
+  padding-block: 60px;
+}
+.sec2-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec2-left p {
+  padding-block: 20px;
+}
+.sec2-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sec2-right .number span {
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
+}
+
+.arrow-icons a {
+  padding: 6px 9px;
+  border: var(--border-primary);
+  border-radius: 100%;
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
+}
+
+.sec2-cards,
+.sec6-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+}
+.card-top {
+  position: relative;
+}
+.card-top blockquote {
+  padding: 4px 10px;
+  background-color: rgba(128, 128, 128, 0.672);
+  display: inline-block;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.55rem + 0.375vw, 1rem);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.card2 blockquote,
+.card4 blockquote {
+  color: var(--clr-dark);
+  background-color: #fff;
+}
+.card-top img {
+  border-radius: 6px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 10px;
+}
+.title-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.rating i {
+  font-size: 0.5625rem;
+  font-size: clamp(0.5625rem, 0.5rem + 0.3125vw, 0.875rem);
+}
+.rating p {
+  color: black;
+}
+.card-details p {
+  text-align: justify;
+}
+/* top-rated-holiday section ends */
+
+/* holiday rentals section start */
+.holiday-rentals {
+  padding-bottom: 60px;
+}
+.sec3-titile p {
+  padding-block: 15px;
+}
+.sec3-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 15px;
+}
+.sec3-image img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* holiday rentals section ends */
+
+/* popular amenities section start */
+.popular-amenities {
+  padding-bottom: 60px;
+}
+.sec4-title {
+  padding-bottom: 20px;
+}
+.sec4-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.sec4-card,
+.sec5-card,
+.sec7-card {
+  background-color: #fff;
+  box-shadow: var(--box-shadow-primary);
+  padding-inline: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  aspect-ratio: 1/0.5;
+}
+.sec4-card i,
+.sec7-card i {
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+}
+/* popular amenities section ends */
+
+/* dhaka's top sights section-5 start */
+
+.sec5-dhakas-top-sights {
+  padding-bottom: 60px;
+}
+.sec5-title {
+  padding-bottom: 20px;
+}
+.sec5-cards,
+.sec7-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 15px;
+}
+.sec5-card,
+.sec7-card {
+  aspect-ratio: 1/0.3;
+}
+/* dhaka's top sights section-5 ends */
+
+/* other great holiday rentals section-6 start */
+.other-great-holiday {
+  padding-bottom: 60px;
+}
+.sec6-title {
+  padding-bottom: 20px;
+}
+.guest blockquote {
+  background-color: #fff;
+  color: black;
+}
+.show-all {
+  padding-top: 30px;
+}
+.show-all a {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: #080809;
+  font-weight: 500;
+  font-size: 0.5625rem;
+  font-size: clamp(0.5625rem, 0.5rem + 0.3125vw, 0.875rem);
+  transition: 0.15s ease-in-out;
+}
+.show-all i {
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
+}
+.show-all a:hover {
+  background-color: #ff385c;
+  color: #fff;
+  border: 1px solid #ff385c;
+}
+/* other great holiday rentals section-6 ends */
+
+/* Quick start about holiday rental section-7 start */
+.quick-start-holiday {
+  padding-bottom: 60px;
+}
+.sec7-title {
+  padding-bottom: 30px;
+}
+.card-title-sec7 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sec7-card p {
+  padding-inline-start: 30px;
+}
+/* Quick start about holiday rental section-7 ends */
+
+/* Destinations to explore section-8 start */
+.destinations-to-explore {
+  padding-bottom: 60px;
+}
+.sec8-title {
+  padding-bottom: 20px;
+}
+
+.sec8-heading ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.193);
+}
+.sec8-heading ul li {
+  color: gray;
+}
+.sec8-heading ul li:first-child {
+  color: black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.81);
+  padding-block-end: 8px;
+}
+.sec8-heading ul li:hover {
+  color: black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.81);
+  padding-block-end: 8px;
+}
+.sec8-cards {
+  padding-block-start: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Destinations to explore section-8 ends */
+
+/* Airbnb bangladesh section-9 start */
+.airbnb-bangladesh {
+  padding-bottom: 40px;
+}
+.airbnb-bangladesh ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.airbnb-bangladesh ul li i {
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
+}
+.airbnb-bangladesh ul li a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.airbnb-bangladesh ul li:last-child {
+  color: #080809b1;
+}
+/* Airbnb bangladesh section-9 ends */
+
+/* Footer section start */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2em;
+  border-top: 1px solid rgba(128, 128, 128, 0.193);
+}
+.footer-left ul,
+.footer-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-left ul li {
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
+}
+.footer-right ul {
+  gap: 15px;
+}
+.footer-right ul li {
+  color: #080809;
+  font-weight: 400;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
+}
+.footer-right ul li a:hover {
+  color: #ff385c;
+}
+/* Footer section ends */

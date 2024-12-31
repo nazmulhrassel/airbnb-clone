@@ -1,0 +1,37 @@
+@import url("../global/boilerplate.css");
+
+h1 {
+  color: #080809;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.475rem + 0.125vw, 1.625rem);
+}
+p {
+  color: gray;
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.525rem + 0.5vw, 1.125rem);
+}
+h2 {
+  color: #080809;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.175rem + 0.375vw, 1.625rem);
+}
+h4 {
+  color: #080809;
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
+}
+
+span {
+  color: #080809;
+  font-weight: 400;
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.525rem + 0.5vw, 1.125rem);
+}
+ul li {
+  color: #080809;
+  font-weight: 400;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
+}
